@@ -3,59 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Marvel Studios</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="" alt="Logo da Marvel" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Personagens</a>
-        <a href="#">Filmes</a>
-        <a href="#">Sobre a Marvel</a>
+      <div class="controle">
+        <img class="logo" src="" alt="Logo da Marvel" />
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Personagens</a>
+          <a href="#">Filmes</a>
+          <a href="#">Sobre a Marvel</a>
 
-        <a href="#"><button>Contato</button></a>
-      </nav>
+          <a href="#"><button>Contato</button></a>
+        </nav>
+      </div>
     </header>
     <section id="topo">
-      <div class="banner banner1">
-        <div class="informacao">
-          <h1>Nome do filme/série</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            fugit nam laboriosam ea quisquam saepe neque ad necessitatibus nulla
-            porro fugiat eveniet, distinctio esse aliquid nobis excepturi.
-            Nulla, velit nisi!
-          </p>
-          <a href=""><button>Assistir agora</button></a>
-          <a href=""><button>Ver trailer</button></a>
+      <div class="slick-banners">
+        <div class="banner banner1">
+          <div class="controle">
+            <div class="informacao">
+              <img
+                src="assets/img/logo-vingadores-ultimato.webp"
+                alt="Logo Vingadores Ultimato"
+              />
+              <h1>VINGADORES ULTIMATO</h1>
+              <p class="descricao">
+                Após Thanos eliminar metade das criaturas vivas, os Vingadores
+                têm de lidar com a perda de amigos e entes queridos. Com Tony
+                Stark vagando perdido no espaço sem água e comida, Steve Rogers
+                e Natasha Romanov lideram a resistência contra o titã louco.
+              </p>
+              <ul class="infos">
+                <li><i class="bi bi-clock"></i> <span> 3h 01min</span></li>
+                <li><i class="bi bi-calendar4-week"></i><span>2019</span></li>
+                <li>
+                  <i class="bi bi-camera-reels"></i
+                  ><span>Ação, Aventura, Ficção Científica</span>
+                </li>
+              </ul>
+              <div class="botoes">
+                <a
+                  class="btn play"
+                  data-fancybox
+                  data-type="iframe"
+                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
+                  ><i class="bi bi-eye"></i>Assistir agora</a
+                >
+                <a
+                  data-fancybox
+                  class="btn"
+                  href="https://www.youtube.com/embed/spJoZReeIeQ?si=-S8KK12gMKLSo0rT"
+                >
+                  <i class="bi bi-camera-reels"></i>Ver trailer</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="banner banner2">
-          <div class="informacao">
-            <h1>Nome do filme/série</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus fugit nam laboriosam ea quisquam saepe neque ad
-              necessitatibus nulla porro fugiat eveniet, distinctio esse aliquid
-              nobis excepturi. Nulla, velit nisi!
-            </p>
-            <a href=""><button>Assistir agora</button></a>
-            <a href=""><button>Ver trailer</button></a>
+          <div class="controle">
+            <div class="informacao">
+              <img
+                src="assets/img/logo-vingadores-ultimato.webp"
+                alt="Logo Vingadores Ultimato"
+              />
+              <h1>HOMEM-ARANHA: SEM VOLTA PARA CASA</h1>
+              <p class="descricao">
+                Peter Parker tem a sua identidade secreta revelada e pede ajuda
+                ao Doutor Estranho. Quando um feitiço para reverter o evento não
+                sai como o esperado, o Homem-Aranha e seu companheiro dos
+                Vingadores precisam enfrentar inimigos de todo o multiverso.
+              </p>
+              <ul class="infos">
+                <li><i class="bi bi-clock"></i> <span>2h 28min.</span></li>
+                <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
+                <li>
+                  <i class="bi bi-camera-reels"></i
+                  ><span>Ação, Aventura, Fantasia</span>
+                </li>
+              </ul>
+              <div class="botoes">
+                <a
+                  class="btn play"
+                  data-fancybox
+                  data-type="iframe"
+                  href="https://sinalpublico.cc/player3/serverf5hlb.php?vid=HMEMARNHSMVLTPRCSA"
+                  ><i class="bi bi-eye"></i>Assistir agora</a
+                >
+                <a
+                  data-fancybox
+                  class="btn"
+                  href="https://www.youtube.com/embed/zg8pHQrxlfY?si=VLC9mZnSEQi41IFF"
+                >
+                  <i class="bi bi-camera-reels"></i>Ver trailer</a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="banner banner3">
-          <div class="informacao">
-            <h1>Nome do filme/série</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus fugit nam laboriosam ea quisquam saepe neque ad
-              necessitatibus nulla porro fugiat eveniet, distinctio esse aliquid
-              nobis excepturi. Nulla, velit nisi!
-            </p>
-            <a href=""><button>Assistir agora</button></a>
-            <a href=""><button>Ver trailer</button></a>
+          <div class="controle">
+            <div class="informacao">
+              <img
+                src="assets/img/logo-invasao-secreta.webp"
+                alt="Logo Invasão Secreta"
+              />
+              <h1>INVASÃO SECRETA</h1>
+              <p class="descricao">
+                Invasão Secreta é uma uma série produzida pelo Marvels Studios e
+                protagonizada por Samuel L. Jackson (Nick Fury) e Ben Mendelsohn
+                (Skrull Talos). Os personagens se conheceram no filme da Capitã
+                Marvel, de 2019, e agora são aliados.
+              </p>
+              <ul class="infos">
+                <li><i class="bi bi-clock"></i> <span>1º temporada</span></li>
+                <li><i class="bi bi-calendar4-week"></i><span>2023</span></li>
+                <li>
+                  <i class="bi bi-camera-reels"></i
+                  ><span>Drama, Espionagem, Ação</span>
+                </li>
+              </ul>
+              <div class="botoes">
+                <a
+                  class="btn play"
+                  data-fancybox
+                  data-type="iframe"
+                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
+                  ><i class="bi bi-eye"></i>Assistir agora</a
+                >
+                <a
+                  data-fancybox
+                  class="btn"
+                  href="https://www.youtube.com/embed/yO0VxK6R4iw"
+                >
+                  <i class="bi bi-camera-reels"></i>Ver trailer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner banner4">
+          <div class="controle">
+            <div class="informacao">
+              <img src="assets/img/logo-loki.webp" alt="Logo Loki" />
+              <h1>LOKI</h1>
+              <p class="descricao">
+                Loki (Tom Hiddleston), o vilão príncipe de Asgard, Deus da
+                Mentira e da má influência intergaláctica, tenta vencer os
+                perigos após roubar o Tesseract. O cubo com as jóias do infinito
+                o colocará em grandes disputas e amadurecimento psicológico
+                inédito.
+              </p>
+              <ul class="infos">
+                <li><i class="bi bi-clock"></i> <span>2º temporada</span></li>
+                <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
+                <li>
+                  <i class="bi bi-camera-reels"></i
+                  ><span>Aventura, Fantasia, Ficção científica</span>
+                </li>
+              </ul>
+              <div class="botoes">
+                <a
+                  class="btn play"
+                  data-fancybox
+                  data-type="iframe"
+                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
+                  ><i class="bi bi-eye"></i>Assistir agora</a
+                >
+                <a
+                  data-fancybox
+                  class="btn"
+                  href="https://www.youtube.com/embed/PgrmbRID0eY?si=dug56u8NN7g"
+                >
+                  <i class="bi bi-camera-reels"></i>Ver trailer</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,5 +219,11 @@
       </section>
     </main>
     <footer></footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   </body>
 </html>
