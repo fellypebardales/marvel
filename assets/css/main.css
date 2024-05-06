@@ -744,7 +744,7 @@ footer nav ul li:hover a {
 .topo-filmes img.img-lateral {
     position: fixed;
     right: -0%;
-    top: 250px;
+    top: 0;
     max-width: 30%;
     z-index: -1;
 }
