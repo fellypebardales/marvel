@@ -35,9 +35,9 @@ const topo = new Swiper("#topo", {
 
 const personagens = new Swiper("#personagens", {
   speed: 800,
-  // autoplay: {
-  //   delay: 8000,
-  // },
+  autoplay: {
+    delay: 8000,
+  },
   navigation: {
     nextEl: ".btn-next",
     prevEl: ".btn-prev",
