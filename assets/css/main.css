@@ -771,9 +771,6 @@ footer nav ul li:hover a {
     z-index: -1;
 }
 
-.topo-series
-
-
 @media screen and (max-width: 991px) {
     .d-grid {
         grid-template-columns: repeat(3, 1fr) !important;
