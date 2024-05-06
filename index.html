@@ -7,11 +7,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="assets/css/slick.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,209 +24,1602 @@
   </head>
   <body>
     <header>
-      <div class="controle">
-        <img class="logo" src="" alt="Logo da Marvel" />
+      <div class="container">
+        <img
+          class="logo"
+          src="assets/img/logo-marvel.svg"
+          alt="Logo da Marvel"
+        />
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Personagens</a>
-          <a href="#">Filmes</a>
-          <a href="#">Sobre a Marvel</a>
-
-          <a href="#"><button>Contato</button></a>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Personagens</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+          <a class="btn" href="#">Contato</a>
         </nav>
       </div>
     </header>
     <section id="topo">
-      <div class="slick-banners">
-        <div class="banner banner1">
-          <div class="controle">
-            <div class="informacao">
-              <img
-                src="assets/img/logo-vingadores-ultimato.webp"
-                alt="Logo Vingadores Ultimato"
-              />
-              <h1>VINGADORES ULTIMATO</h1>
-              <div id="characters-list"></div>
-              <p class="descricao">
-                Após Thanos eliminar metade das criaturas vivas, os Vingadores
-                têm de lidar com a perda de amigos e entes queridos. Com Tony
-                Stark vagando perdido no espaço sem água e comida, Steve Rogers
-                e Natasha Romanov lideram a resistência contra o titã louco.
-              </p>
-              <ul class="infos">
-                <li><i class="bi bi-clock"></i> <span> 3h 01min</span></li>
-                <li><i class="bi bi-calendar4-week"></i><span>2019</span></li>
-                <li>
-                  <i class="bi bi-camera-reels"></i
-                  ><span>Ação, Aventura, Ficção Científica</span>
-                </li>
-              </ul>
-              <div class="botoes">
-                <a
-                  class="btn play"
-                  data-fancybox
-                  data-type="iframe"
-                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
-                  ><i class="bi bi-eye"></i>Assistir agora</a
-                >
-                <a
-                  data-fancybox
-                  class="btn"
-                  href="https://www.youtube.com/embed/spJoZReeIeQ?si=-S8KK12gMKLSo0rT"
-                >
-                  <i class="bi bi-camera-reels"></i>Ver trailer</a
-                >
+      <div class="swiper-wrapper">
+        <div class="banner banner1 swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="informacao col-md-5">
+                <img
+                  src="assets/img/logo-vingadores-ultimato.webp"
+                  alt="Logo Vingadores Ultimato"
+                />
+                <h1>VINGADORES ULTIMATO</h1>
+                <div id="characters-list"></div>
+                <p class="descricao">
+                  Após Thanos eliminar metade das criaturas vivas, os Vingadores
+                  têm de lidar com a perda de amigos e entes queridos. Com Tony
+                  Stark vagando perdido no espaço sem água e comida, Steve
+                  Rogers e Natasha Romanov lideram a resistência contra o titã
+                  louco.
+                </p>
+                <ul class="infos">
+                  <li><i class="bi bi-clock"></i> <span> 3h 01min</span></li>
+                  <li><i class="bi bi-calendar4-week"></i><span>2019</span></li>
+                  <li>
+                    <i class="bi bi-camera-reels"></i
+                    ><span>Ação, Aventura, Ficção Científica</span>
+                  </li>
+                </ul>
+                <div class="botoes">
+                  <a
+                    class="btn play"
+                    data-fancybox
+                    data-type="iframe"
+                    href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
+                    ><i class="bi bi-eye"></i>Assistir agora</a
+                  >
+                  <a
+                    data-fancybox
+                    class="btn"
+                    href="https://www.youtube.com/embed/spJoZReeIeQ?si=-S8KK12gMKLSo0rT"
+                  >
+                    <i class="bi bi-camera-reels"></i>Ver trailer</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="banner banner2">
-          <div class="controle">
-            <div class="informacao">
-              <img
-                src="assets/img/homem-aranha-removebg-preview.webp"
-                alt="Logo Vingadores Ultimato"
-              />
-              <h1>HOMEM-ARANHA: SEM VOLTA PARA CASA</h1>
-              <p class="descricao">
-                Peter Parker tem a sua identidade secreta revelada e pede ajuda
-                ao Doutor Estranho. Quando um feitiço para reverter o evento não
-                sai como o esperado, o Homem-Aranha e seu companheiro dos
-                Vingadores precisam enfrentar inimigos de todo o multiverso.
-              </p>
-              <ul class="infos">
-                <li><i class="bi bi-clock"></i> <span>2h 28min.</span></li>
-                <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
-                <li>
-                  <i class="bi bi-camera-reels"></i
-                  ><span>Ação, Aventura, Fantasia</span>
-                </li>
-              </ul>
-              <div class="botoes">
-                <a
-                  class="btn play"
-                  data-fancybox
-                  data-type="iframe"
-                  href="https://sinalpublico.cc/player3/serverf5hlb.php?vid=HMEMARNHSMVLTPRCSA"
-                  ><i class="bi bi-eye"></i>Assistir agora</a
-                >
-                <a
-                  data-fancybox
-                  class="btn"
-                  href="https://www.youtube.com/embed/zg8pHQrxlfY?si=VLC9mZnSEQi41IFF"
-                >
-                  <i class="bi bi-camera-reels"></i>Ver trailer</a
-                >
+        <div class="banner banner2 swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="informacao col-md-6">
+                <img
+                  src="assets/img/homem-aranha-removebg-preview.webp"
+                  alt="Logo Vingadores Ultimato"
+                />
+                <h1>HOMEM-ARANHA: SEM VOLTA PARA CASA</h1>
+                <p class="descricao">
+                  Peter Parker tem a sua identidade secreta revelada e pede
+                  ajuda ao Doutor Estranho. Quando um feitiço para reverter o
+                  evento não sai como o esperado, o Homem-Aranha e seu
+                  companheiro dos Vingadores precisam enfrentar inimigos de todo
+                  o multiverso.
+                </p>
+                <ul class="infos">
+                  <li><i class="bi bi-clock"></i> <span>2h 28min.</span></li>
+                  <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
+                  <li>
+                    <i class="bi bi-camera-reels"></i
+                    ><span>Ação, Aventura, Fantasia</span>
+                  </li>
+                </ul>
+                <div class="botoes">
+                  <a
+                    class="btn play"
+                    data-fancybox
+                    data-type="iframe"
+                    href="https://sinalpublico.cc/player3/serverf5hlb.php?vid=HMEMARNHSMVLTPRCSA"
+                    ><i class="bi bi-eye"></i>Assistir agora</a
+                  >
+                  <a
+                    data-fancybox
+                    class="btn"
+                    href="https://www.youtube.com/embed/zg8pHQrxlfY?si=VLC9mZnSEQi41IFF"
+                  >
+                    <i class="bi bi-camera-reels"></i>Ver trailer</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="banner banner3">
-          <div class="controle">
-            <div class="informacao">
-              <img
-                src="assets/img/logo-invasao-secreta.webp"
-                alt="Logo Invasão Secreta"
-              />
-              <h1>INVASÃO SECRETA</h1>
-              <p class="descricao">
-                Invasão Secreta é uma uma série produzida pelo Marvels Studios e
-                protagonizada por Samuel L. Jackson (Nick Fury) e Ben Mendelsohn
-                (Skrull Talos). Os personagens se conheceram no filme da Capitã
-                Marvel, de 2019, e agora são aliados.
-              </p>
-              <ul class="infos">
-                <li><i class="bi bi-clock"></i> <span>1º temporada</span></li>
-                <li><i class="bi bi-calendar4-week"></i><span>2023</span></li>
-                <li>
-                  <i class="bi bi-camera-reels"></i
-                  ><span>Drama, Espionagem, Ação</span>
-                </li>
-              </ul>
-              <div class="botoes">
-                <a
-                  class="btn play"
-                  data-fancybox
-                  data-type="iframe"
-                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
-                  ><i class="bi bi-eye"></i>Assistir agora</a
-                >
-                <a
-                  data-fancybox
-                  class="btn"
-                  href="https://www.youtube.com/embed/yO0VxK6R4iw"
-                >
-                  <i class="bi bi-camera-reels"></i>Ver trailer</a
-                >
+        <div class="banner banner3 swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="informacao col-md-6">
+                <img
+                  src="assets/img/logo-invasao-secreta.webp"
+                  alt="Logo Invasão Secreta"
+                />
+                <h1>INVASÃO SECRETA</h1>
+                <p class="descricao">
+                  Invasão Secreta é uma uma série produzida pelo Marvels Studios
+                  e protagonizada por Samuel L. Jackson (Nick Fury) e Ben
+                  Mendelsohn (Skrull Talos). Os personagens se conheceram no
+                  filme da Capitã Marvel, de 2019, e agora são aliados.
+                </p>
+                <ul class="infos">
+                  <li><i class="bi bi-clock"></i> <span>1º temporada</span></li>
+                  <li><i class="bi bi-calendar4-week"></i><span>2023</span></li>
+                  <li>
+                    <i class="bi bi-camera-reels"></i
+                    ><span>Drama, Espionagem, Ação</span>
+                  </li>
+                </ul>
+                <div class="botoes">
+                  <a class="btn play" data-src="#serie-invasao" data-fancybox
+                    ><i class="bi bi-eye"></i>Assistir agora</a
+                  >
+                  <div class="row banner box-fancy" id="serie-invasao">
+                    <div class="container-md">
+                      <div class="conteudo col-md-12">
+                        <h3>INVASÃO SECRETA</h3>
+                        <div class="infos">
+                          <div>
+                            <h4>Temporada 1</h4>
+                            <ul>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP01"
+                                  >1. Ressurreição</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP02"
+                                  >2. Promessas</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP03"
+                                  >3. Traído</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP04"
+                                  >4. Amado</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP05"
+                                  >5. Colheita</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server20hlb.php?vid=INSAOSCRTAT01EP06"
+                                  >6. Lar</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    data-fancybox
+                    class="btn"
+                    href="https://www.youtube.com/embed/yO0VxK6R4iw"
+                  >
+                    <i class="bi bi-camera-reels"></i>Ver trailer</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="banner banner4">
-          <div class="controle">
-            <div class="informacao">
-              <img src="assets/img/logo-loki.webp" alt="Logo Loki" />
-              <h1>LOKI</h1>
-              <p class="descricao">
-                Loki (Tom Hiddleston), o vilão príncipe de Asgard, Deus da
-                Mentira e da má influência intergaláctica, tenta vencer os
-                perigos após roubar o Tesseract. O cubo com as jóias do infinito
-                o colocará em grandes disputas e amadurecimento psicológico
-                inédito.
-              </p>
-              <ul class="infos">
-                <li><i class="bi bi-clock"></i> <span>2º temporada</span></li>
-                <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
-                <li>
-                  <i class="bi bi-camera-reels"></i
-                  ><span>Aventura, Fantasia, Ficção científica</span>
-                </li>
-              </ul>
-              <div class="botoes">
-                <a
-                  class="btn play"
-                  data-fancybox
-                  data-type="iframe"
-                  href="https://sinalpublico.cc/player3/serverfhlb.php?vid=VNGDRSULTMTO"
-                  ><i class="bi bi-eye"></i>Assistir agora</a
-                >
-                <a
-                  data-fancybox
-                  class="btn"
-                  href="https://www.youtube.com/embed/PgrmbRID0eY?si=dug56u8NN7g"
-                >
-                  <i class="bi bi-camera-reels"></i>Ver trailer</a
-                >
+        <div class="banner banner4 swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="informacao col-md-6">
+                <img src="assets/img/logo-loki.webp" alt="Logo Loki" />
+                <h1>LOKI</h1>
+                <p class="descricao">
+                  Loki (Tom Hiddleston), o vilão príncipe de Asgard, Deus da
+                  Mentira e da má influência intergaláctica, tenta vencer os
+                  perigos após roubar o Tesseract. O cubo com as jóias do
+                  infinito o colocará em grandes disputas e amadurecimento
+                  psicológico inédito.
+                </p>
+                <ul class="infos">
+                  <li><i class="bi bi-clock"></i> <span>2º temporada</span></li>
+                  <li><i class="bi bi-calendar4-week"></i><span>2021</span></li>
+                  <li>
+                    <i class="bi bi-camera-reels"></i
+                    ><span>Aventura, Fantasia, Ficção científica</span>
+                  </li>
+                </ul>
+                <div class="botoes">
+                  <a class="btn play" data-src="#serie-loki" data-fancybox
+                    ><i class="bi bi-eye"></i>Assistir agora</a
+                  >
+                  <div class="row banner box-fancy" id="serie-loki">
+                    <div class="container-md">
+                      <div class="conteudo col-md-12">
+                        <h3>LOKI</h3>
+                        <div class="infos">
+                          <div>
+                            <h4>Temporada 1</h4>
+                            <ul>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP01"
+                                  >1. Glorioso Propósito</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP02"
+                                  >2. A Variante</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP03"
+                                  >3. Lamentis</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP04"
+                                  >4. O Evento Nexus</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP05"
+                                  >5. Jornada ao Mistério</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server15hlb.php?vid=LOKIT01EP06"
+                                  >6. Por Todo Tempo. Sempre.</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4>Temporada 2</h4>
+                            <ul>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP01"
+                                  >1. Ouroboros</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP02"
+                                  >2. Quem é Brad</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP03"
+                                  >3. 1893</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP04"
+                                  >4. Coração da AVT</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP05"
+                                  >5. Ciência/Ficção</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  data-fancybox
+                                  data-type="iframe"
+                                  href="https://sinalpublico.cc/player3/server21hlb.php?vid=LOKIT02EP06"
+                                  >6. Glorioso Propósito</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    data-fancybox
+                    class="btn"
+                    href="https://www.youtube.com/embed/qgzv_a45UkI"
+                  >
+                    <i class="bi bi-camera-reels"></i>Ver trailer</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <div class="swiper-pagination"></div>
       <div class="trailers">
         <div class="slick-trailers"></div>
       </div>
     </section>
     <main>
       <section id="personagens">
-        <h2>Conheça os personagens principais da <span>Marvel</span></h2>
-        <div class="itens-personagens"></div>
+        <img
+          class="martelo-thor"
+          src="assets/img/martelo-thor.png"
+          alt="Mjölnir"
+        />
+        <div class="container">
+          <h2>Confira alguns <span>personagens</span></h2>
+          <div class="buttons">
+            <div class="btn-prev"><i class="bi bi-arrow-left-circle"></i></div>
+            <div class="btn-next"><i class="bi bi-arrow-right-circle"></i></div>
+          </div>
+        </div>
+        <div class="itens-personagens swiper-wrapper">
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_chadwick_boseman.webp"
+              alt="Imagem Pantera Negra"
+            />
+            <div class="infos">
+              <p>Pantera Negra</p>
+              <p>T'Challa</p>
+            </div>
+            <div class="row box-fancy" id="sobre-pantera-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_chadwick_boseman.webp"
+                  alt="Imagem Pantera Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Pantera Negra</h3>
+                  <p>T'Challa</p>
+                  <div class="infos">
+                    <p>
+                      T'Challa, também conhecido como o Pantera Negra, era o
+                      Chefe de Estado da nação africana de Wakanda, o país
+                      tecnologicamente mais avançado da Terra. Nesse papel, ele
+                      era Rei/Chefe, líder religioso e comandante-chefe, tudo ao
+                      mesmo tempo. Ele também é considerado um dos maiores
+                      intelectos do mundo. Usando a tecnologia de ponta de
+                      Vibranium de Wakanda e suas próprias habilidades e
+                      fortuna, ele dedicou sua vida ao serviço de toda a
+                      humanidade. Ele se tornaria um membro proeminente dos
+                      Vingadores (Terra-616), e, eventualmente, se tornaria o
+                      líder da equipe. Embora revelações recentes sobre seu
+                      tempo como governante de Wakanda tenham tensionado seu
+                      relacionamento com seus súditos e seus companheiros
+                      heróis, levando ao seu exílio do país, ele permanece um
+                      Vingador e um protetor leal de seu povo.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4>HABILIDADES</h4>
+                        <ul>
+                          <li><span>Empoderamento Divino</span></li>
+                          <li><span>Conhecimento do Pantera Negra</span></li>
+                          <li>
+                            <span>Sentidos Agudos da Super-Humanidade</span>
+                          </li>
+                          <li><span>Força Humana Máxima</span></li>
+                          <li><span>Velocidade Humana Máxima</span></li>
+                          <li><span>Necromancia</span></li>
+                          <li><span>Agilidade Humana Máxima</span></li>
+                          <li><span>Durabilidade Humana Máxima</span></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h4>Fraquezas</h4>
+                        <ul>
+                          <li>
+                            <span
+                              >Devido a seus sentidos elevados, luzes
+                              brilhantes, ruídos altos e cheiros fortes podem
+                              potencialmente dominá-lo.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-src="#sobre-thor" data-fancybox class="item swiper-slide">
+            <img
+              src="assets/img/avengers_chris_hemsworth.webp"
+              alt="Imagem Thor"
+            />
+            <div class="infos">
+              <p>Thor</p>
+              <p>Thor Odinson</p>
+            </div>
+            <div class="row box-fancy" id="sobre-thor">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_chris_hemsworth.webp"
+                  alt="Imagem Thor"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Thor</h3>
+                  <p>Thor Odinson</p>
+                  <div class="infos">
+                    <p>
+                      Thor é o Deus do Trovão, um membro da raça conhecida como
+                      asgardianos, um grupo de seres humanóides da dimensão do
+                      bolso de Asgard, o Reino Eterno. Thor é filho de Odin, o
+                      Pai de Todos e rei de Asgard. Ele era adorado pelos
+                      humanos conhecidos como vikings e tornou-se parte da
+                      mitologia nórdica. Armado com seu martelo Uru encantado
+                      Mjolnir, que o ajuda a canalizar suas energias divinas,
+                      ele se tornou o guerreiro mais poderoso dos Dez Reinos.
+                      Quando seu comportamento irresponsável e impetuoso se
+                      tornou excessivo, Odin o mandou para Midgard (mais
+                      comumente conhecido como Terra) como um estudante de
+                      medicina mortal deficiente chamado Donald Blake, despojado
+                      de sua memória. Depois de aprender a humildade, ele
+                      recuperou sua memória, bem como seus poderes divinos. Thor
+                      passou a se tornar um campeão de Midgard, bem como um dos
+                      fundadores membros dos Vingadores; "Os Heróis Mais
+                      Poderosos da Terra".
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-feiticeita-escarlate"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_elizabeth_olsen.webp"
+              alt="Imagem Feiticeira Escarlate"
+            />
+            <div class="infos">
+              <p>Feiticeira Escarlate</p>
+              <p>Wanda Maximoff</p>
+            </div>
+            <div class="row box-fancy" id="sobre-feiticeita-escarlate">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_elizabeth_olsen.webp"
+                  alt="Imagem Feiticeira Escarlate"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Feiticeira Escarlat</h3>
+                  <p>Wanda Maximoff</p>
+                  <div class="infos">
+                    <p>
+                      Wanda Maximoff, a Feiticeira Escarlate, é uma feiticeira
+                      cigana e irmã gêmea do velocista Mercúrio. Uma vez
+                      acreditou-se que fossem filhos mutantes do Magneto, os
+                      gêmeos são na verdade órfãos aprimorados pelo Alto
+                      Evolucionário em Montanha Wundagore em Transia. A
+                      Feiticeira Escarlate tornou-se um condutor da magia do
+                      caos, permitindo-lhe alterar probabilidades e manipular a
+                      própria realidade lançando várias "maldições". Depois de
+                      serem salvos de uma multidão enfurecida por Magneto, a
+                      Feiticeira Escarlate e seu irmão juntaram-se à Irmandade
+                      de Mutantes para lutar pela causa da supremacia mutante de
+                      Magneto. Discordando da abordagem implacável de Magneto em
+                      relação às hostilidades humanas contra mutantes, os gêmeos
+                      o deixaram e se juntaram aos super-heróis Vingadores em
+                      vez disso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-src="#sobre-falcao" data-fancybox class="item swiper-slide">
+            <img
+              src="assets/img/avengers_anthony_mackie.webp"
+              alt="Imagem Falcão"
+            />
+            <div class="infos">
+              <p>Falcão</p>
+              <p>Sam Wilson</p>
+            </div>
+            <div class="row box-fancy" id="sobre-falcao">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_anthony_mackie.webp"
+                  alt="Imagem Falcão"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Falcão</h3>
+                  <p>Sam Wilson</p>
+                  <div class="infos">
+                    <p>
+                      Sam Wilson cresceu em um bairro difícil no Harlem. Seu
+                      pai, um ministro, foi morto tentando impedir uma briga.
+                      Sam fez o possível para tentar fazer a coisa certa, sendo
+                      voluntário e se tornando assistente social. Sam foi
+                      atraído para uma ilha caribenha chamada Exílio onde o
+                      Caveira Vermelha e seus capangas estavam se escondendo.
+                      Após sua batalha inicial, Capitão América e Sam derrotaram
+                      o Caveira, e o Falcão tornou-se parceiro do Capitão por um
+                      longo tempo. Alegadamente, o Caveira Vermelha usou o Cubo
+                      Cósmico para dar a Sam a habilidade de se comunicar
+                      telepaticamente com pássaros, especialmente um pássaro que
+                      Wilson comprou chamado Asa Vermelha. O Falcão finalmente
+                      deixou como parceiro de Cap quando ele foi nomeado o líder
+                      dos Superagentes da S.H.I.E.L.D..
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-doutor-estranho"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_benedict_cumberbat.webp"
+              alt="Imagem Doutor Estranho"
+            />
+            <div class="infos">
+              <p>Doutor Estranho</p>
+              <p>Stephen Strange</p>
+            </div>
+            <div class="row box-fancy" id="sobre-doutor-estranho">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_benedict_cumberbat.webp"
+                  alt="Imagem Doutor Estranho"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Doutor Estranho</h3>
+                  <p>Stephen Strange</p>
+                  <div class="infos">
+                    <p>
+                      O Dr. Stephen Strange, M.D., também conhecido como o
+                      Doutor Estranho, foi o Mago Supremo da Terra. Strange era
+                      um neurocirurgião brilhante, porém arrogante, até que um
+                      acidente de carro o deixou com as mãos incapacitadas.
+                      Quando a medicina moderna falhou em curá-lo, ele embarcou
+                      em uma jornada para Kamar-Taj, no Tibete, onde foi
+                      treinado pelo Ancião. Ele curou suas mãos e aprendeu mais
+                      sobre magia, tornando-se eventualmente um Mestre das Artes
+                      Místicas. Ele se estabeleceu no Sanctum Sanctorum, em
+                      Greenwich Village, na cidade de Nova York, tornando-se o
+                      protetor da Terra contra ameaças místicas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-soldado-invernal"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_sebastian_stan.webp"
+              alt="Imagem Máquina de Combate"
+            />
+            <div class="infos">
+              <p>Soldado Invernal</p>
+              <p>Bucky Barnes</p>
+            </div>
+            <div class="row box-fancy" id="sobre-soldado-invernal">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_sebastian_stan.webp"
+                  alt="Imagem Soldado Invernal"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Soldado Invernal</h3>
+                  <p>Bucky Barnes</p>
+                  <div class="infos">
+                    <p>
+                      Sargento James Buchanan "Bucky" Barnes é um veterano da
+                      Segunda Guerra Mundial, ex-oficial do 107º Regimento de
+                      Infantaria e melhor amigo de Steve Rogers desde a
+                      infância. Barnes foi recrutado e designado para o 107º em
+                      1943. Seu regimento foi capturado pela HIDRA e Barnes foi
+                      cobaia de experimentos de Arnim Zola. Barnes e seu
+                      regimento foram resgatados por Rogers, que havia se
+                      tornado o Capitão América em sua ausência. Unindo forças
+                      na continuidade da guerra, Barnes e Rogers formaram o
+                      Comando Selvagem para enfrentar as forças do Caveira
+                      Vermelha. No entanto, durante uma tentativa de finalmente
+                      capturar Zola nos Alpes Austríacos, Barnes foi pego em uma
+                      emboscada e despencou de um trem a centenas de metros.
+                      Como nenhum corpo foi encontrado, Barnes foi dado como
+                      morto, mas oficialmente listado como desaparecido em
+                      combate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-homem-aranha"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_tom_holland.webp"
+              alt="Imagem Homem-Aranha"
+            />
+            <div class="infos">
+              <p>Homem-Aranha</p>
+              <p>Peter Parker</p>
+            </div>
+            <div class="row box-fancy" id="sobre-homem-aranha">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_tom_holland.webp"
+                  alt="Imagem Homem-Aranha"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Homem-Aranha</h3>
+                  <p>Peter Parker</p>
+                  <div class="infos">
+                    <p>
+                      Às vezes estudante, às vezes cientista e às vezes
+                      fotógrafo, Peter Parker é um super herói em tempo integral
+                      mais conhecido como o Homem-Aranha, que se arrasta pela
+                      teia e pela parede. Como uma criança órfã, Peter foi
+                      criado por seu tio Ben e sua tia May. Em uma exposição
+                      científica, Peter foi mordido por uma errante aranha
+                      radioativa que lhe concedeu uma série de poderes
+                      aracnídeos. Inicialmente ele se tornou o Homem-Aranha para
+                      usar seus poderes como animador, crescendo tão convencido
+                      que não se preocupou em parar um transeunte ladrão. Em uma
+                      reviravolta do destino, o mesmo ladrão acabou matando o
+                      tio Ben de Peter, levando-o a perceber que precisava usar
+                      seus poderes de forma responsável. A partir daí, o
+                      Homem-Aranha tornou-se um vigilante combatente do crime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-capitao-america"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_chris_evans.webp"
+              alt="Imagem Capitão América"
+            />
+            <div class="infos">
+              <p>Capitão América</p>
+              <p>Steve Rogers</p>
+            </div>
+            <div class="row box-fancy" id="sobre-capitao-america">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_chris_evans.webp"
+                  alt="Imagem Capitão América"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Capitão América</h3>
+                  <p>Steve Rogers</p>
+                  <div class="infos">
+                    <p>
+                      Durante os dias sombrios do início da década de 1940, uma
+                      experiência militar secreta dos EUA transformou Steve
+                      Rogers no primeiro supersoldado da América, o Capitão
+                      América. Durante a guerra, o Capitão e seu parceiro Bucky
+                      Barnes lutaram ao lado das infantarias e com um grupo de
+                      heróis conhecidos como os Invasores. Nos meses finais da
+                      Segunda Guerra Mundial, o Capitão América e Bucky foram
+                      ambos supostamente mortos em uma explosão. Décadas mais
+                      tarde, o Capitão América foi encontrado preso no gelo e
+                      ressuscitado no mundo moderno. O Capitão América seria
+                      então mais tarde um dos membros mais importantes dos
+                      Vingadores, assim como um líder da equipe. Como um símbolo
+                      de liberdade e patriotismo, vários homens tomaram o manto
+                      do Capitão América nas várias ausências de Rogers. São
+                      dignos de nota William Nasland e Jeffrey Mace, Bucky
+                      Barnes, e Sam Wilson.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-rocket-groot"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_groot.webp"
+              alt="Imagem Rocket e Goot"
+            />
+            <div class="infos">
+              <p>Rocket e Goot</p>
+              <p>Rocket e Goot</p>
+            </div>
+            <div class="row box-fancy" id="sobre-rocket-groot">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_groot.webp"
+                  alt="Imagem Rocket e Goot"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Rocket e Goot</h3>
+                  <p>Rocket e Goot</p>
+                  <div class="infos">
+                    <p>
+                      Rocket Raccoon é um indivíduo geneticamente aprimorado
+                      similar a um guaxinim e transformado em criminoso
+                      autônomo. Ele se tornou um membro dos Guardiões da Galáxia
+                      junto com seu amigo e parceiro Groot.
+                      <br /><br />
+                      Groot é um colosso de Flora que foi o herói profetizado de
+                      Drez-Lar e cúmplice de Rocket Raccoon. Juntos, os dois
+                      viajaram pela galáxia coletando recompensas até conhecerem
+                      Star-Lord e Gamora pouco antes de os quatro serem
+                      capturados e colocados em Kyln, onde também conheceram
+                      Drax, o Destruidor. Lá, eles concordaram em trabalhar
+                      juntos para escapar e vender o Orbe com um lucro enorme.
+                      No entanto, quando foi descoberto que o Orbe continha uma
+                      das Joias do Infinito que estava sendo procurada por
+                      Ronan, o Acusador, Groot convenceu seus amigos a
+                      arriscarem tudo para impedir os planos diabólicos de
+                      Ronan. Durante a Batalha de Xandar, Groot sacrificou a
+                      própria vida para salvar seus novos amigos . Porém, parte
+                      de seu corpo destruído foi plantado por Rocket para dar
+                      origem a um novo Groot, já que eles se juntaram aos
+                      Guardiões da Galáxia .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-homem-de-ferro"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_robert_downey_jr.webp"
+              alt="Imagem Homem de Ferro"
+            />
+            <div class="infos">
+              <p>Homem de Ferro</p>
+              <p>Tony Stark</p>
+            </div>
+            <div class="row box-fancy" id="sobre-homem-de-ferro">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_robert_downey_jr.webp"
+                  alt="Imagem Homem de Ferro"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Homem de Ferro</h3>
+                  <p>Tony Stark</p>
+                  <div class="infos">
+                    <p>
+                      Tony Stark foi um industrialista, membro fundador dos
+                      Vingadores e antigo CEO das Indústrias Stark. Um inventor
+                      ousado e brilhante, Stark se auto-descrevia como um gênio,
+                      bilionário, playboy e filantropo. Usando sua grande
+                      riqueza e conhecimento técnico excepcional, Stark foi um
+                      dos homens mais poderosos do mundo após a morte de seus
+                      pais e desfrutou do estilo de vida de playboy por muitos
+                      anos, até ser sequestrado pelos Dez Anéis no Afeganistão
+                      durante a demonstração de uma frota de mísseis Jericho.
+                      Com sua vida em jogo, Stark criou e utilizou uma armadura
+                      para escapar de seus captores. Ao voltar para casa, ele
+                      enfrentou terroristas e seu ex-parceiro de negócios,
+                      Obadiah Stane, que se voltou contra ele. Stark aproveitou
+                      a fama que veio com sua nova identidade secreta e decidiu
+                      divulgá-la para o mundo, revelando publicamente ser o
+                      Homem de Ferro.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-src="#sobre-okoye" data-fancybox class="item swiper-slide">
+            <img
+              src="assets/img/avengers_danai_gurira.webp"
+              alt="Imagem Okoye"
+            />
+            <div class="infos">
+              <p>Okoye Dora Milaje</p>
+              <p>Okoye</p>
+            </div>
+            <div class="row box-fancy" id="sobre-okoye">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_danai_gurira.webp"
+                  alt="Imagem Okoye"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Okoye Dora Milaje</h3>
+                  <p>Okoye</p>
+                  <div class="infos">
+                    <p>
+                      Okoye é o ex-general da Dora Milaje e chefe das forças
+                      armadas e da inteligência de Wakanda . Testemunhando a
+                      coroação de T'Challa , ela se juntou a ele na busca por
+                      Ulysses Klaue . Depois que Erik Killmonger derrubou
+                      T'Challa, Okoye se viu em conflito entre sua amizade com
+                      T'Challa ou seu dever para com seu novo rei. T'Challa logo
+                      retornou e Okoye logo se juntou a ele na luta contra
+                      Killmonger e na retomada do trono com sucesso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-viuva-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_scarlett_johansson.webp"
+              alt="Imagem Viúva Negra"
+            />
+            <div class="infos">
+              <p>Viúva Negra</p>
+              <p>Natasha Romanoff</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_karen_gillian.webp"
+              alt="Imagem Nebulosa"
+            />
+            <div class="infos">
+              <p>Nebulosa</p>
+              <p>Nebulosa</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_paul_bettany.webp"
+              alt="Imagem Visão"
+            />
+            <div class="infos">
+              <p>Visão</p>
+              <p>Visão</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_benedict_wong.webp"
+              alt="Imagem Wong"
+            />
+            <div class="infos">
+              <p>Wong</p>
+              <p>Wong</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_don_cheadle.webp"
+              alt="Imagem Máquina de Combate"
+            />
+            <div class="infos">
+              <p>Máquina de Combate</p>
+              <p>James Rhodes</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_dave_batista.webp"
+              alt="Imagem Drax"
+            />
+            <div class="infos">
+              <p>Drax</p>
+              <p>Drax</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img src="assets/img/avengers_hulk.webp" alt="Imagem Hulk" />
+            <div class="infos">
+              <p>Hulk</p>
+              <p>Bruce Banner</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_pom-klementieff.webp"
+              alt="Imagem Mantis"
+            />
+            <div class="infos">
+              <p>Mantis</p>
+              <p>Mantis</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_jeremy_renner.webp"
+              alt="Imagem Gavião Arqueiro"
+            />
+            <div class="infos">
+              <p>Gavião Arqueiro</p>
+              <p>Clint Barton</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_letitia_wright.webp"
+              alt="Imagem Shuri"
+            />
+            <div class="infos">
+              <p>Shuri</p>
+              <p>Shuri</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_chris_pratt.webp"
+              alt="Imagem Senhor das Estrelas"
+            />
+            <div class="infos">
+              <p>Senhor das Estrelas</p>
+              <p>Peter Quill</p>
+            </div>
+            <div class="row box-fancy" id="sobre-viuva-negra">
+              <div class="container-md">
+                <img
+                  src="assets/img/avengers_scarlett_johansson.webp"
+                  alt="Imagem Viúva Negra"
+                />
+                <div class="conteudo col-md-8">
+                  <h3>Viúva Negra</h3>
+                  <p>Natasha Romanoff</p>
+                  <div class="infos">
+                    <p>
+                      Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                      das mais talentosas espiãs e assassinas de todo o mundo e
+                      um membro fundador dos Vingadores. Originalmente uma
+                      agente da agência soviética de inteligência estrangeira, o
+                      KGB, ela mais tarde se tornou membro da S.H.I.E.L.D., a
+                      agência internacional de contra-espionagem. Tendo uma
+                      extensa maestria em artes marciais e armada com sua Picada
+                      da Viúva, a Viúva Negra se tornou uma das agentes mais
+                      eficientes da S.H.I.E.L.D. Durante uma missão, ela se
+                      infiltrou nas Indústrias Stark para acompanhar Tony Stark
+                      devido receios de que ele estivesse morrendo. Durante essa
+                      missão, Romanoff ajudou Stark a derrotar os planos
+                      terroristas de Ivan Vanko contra ele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-src="#sobre-pantera-negra"
+            data-fancybox
+            class="item swiper-slide"
+          >
+            <img
+              src="assets/img/avengers_zoe_saldana.webp"
+              alt="Imagem Gamora"
+            />
+            <div class="infos">
+              <p>Gamora</p>
+              <p>Gamora</p>
+            </div>
+          </a>
+          <div class="row box-fancy" id="sobre-viuva-negra">
+            <div class="container-md">
+              <img
+                src="assets/img/avengers_scarlett_johansson.webp"
+                alt="Imagem Viúva Negra"
+              />
+              <div class="conteudo col-md-8">
+                <h3>Viúva Negra</h3>
+                <p>Natasha Romanoff</p>
+                <div class="infos">
+                  <p>
+                    Natasha Romanoff, mais conhecida como Viúva Negra, foi uma
+                    das mais talentosas espiãs e assassinas de todo o mundo e um
+                    membro fundador dos Vingadores. Originalmente uma agente da
+                    agência soviética de inteligência estrangeira, o KGB, ela
+                    mais tarde se tornou membro da S.H.I.E.L.D., a agência
+                    internacional de contra-espionagem. Tendo uma extensa
+                    maestria em artes marciais e armada com sua Picada da Viúva,
+                    a Viúva Negra se tornou uma das agentes mais eficientes da
+                    S.H.I.E.L.D. Durante uma missão, ela se infiltrou nas
+                    Indústrias Stark para acompanhar Tony Stark devido receios
+                    de que ele estivesse morrendo. Durante essa missão, Romanoff
+                    ajudou Stark a derrotar os planos terroristas de Ivan Vanko
+                    contra ele.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="Filmes">
-        <h2>Assista agora alguns filmes da <span>Marvel</span></h2>
+      <section id="filmes">
+        <div class="container">
+          <h2>Escolha um filme e <span>Assista!</span></h2>
+          <div class="d-grid">
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf4hlb.php?vid=VNGDRSGRAINFNT"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-vingadores-guerra-infinita.jpg"
+                  alt="Imagem Máquina de Combate"
+                />
+              </div>
+              <div class="infos">
+                <p>Vingadores: Guerra Infinita</p>
+                <p>3h 2m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf2hlb.php?vid=CAPTAMRC2"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-capitao-america-o-soldado-invernal.jpg"
+                  alt=">Capitão América 2: O Soldado Invernal"
+                />
+              </div>
+              <div class="infos">
+                <p>Capitão América 2: O Soldado Invernal</p>
+                <p>2h 16m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf3hlb.php?vid=ASMRVLS"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-as-marvels.jpg"
+                  alt=">As Marvels"
+                />
+              </div>
+              <div class="infos">
+                <p>As Marvels</p>
+                <p>2h 27m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf5hlb.php?vid=THORAMRETRVAO"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-thor-amor-e-trovao.jpg"
+                  alt=">Thor: Amor e Trovão"
+                />
+              </div>
+              <div class="infos">
+                <p>Thor: Amor e Trovão</p>
+                <p>1h 59m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverfhlb.php?vid=XMENFNXNGRA"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-x-men-fenix-negra.jpg"
+                  alt=">X-Men: Fênix Negra"
+                />
+              </div>
+              <div class="infos">
+                <p>X-Men: Fênix Negra</p>
+                <p>1h 54m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverfhlb.php?vid=OINCVLHLK"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-o-incrivel-hulk.jpg"
+                  alt=">O Incrível Hulk"
+                />
+              </div>
+              <div class="infos">
+                <p>O Incrível Hulk</p>
+                <p>2h 0m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf3hlb.php?vid=DRESTNHO"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-doutor-estranho.jpg"
+                  alt=">Doutor Estranho"
+                />
+              </div>
+              <div class="infos">
+                <p>Doutor Estranho</p>
+                <p>1h 55m</p>
+              </div>
+            </a>
+
+            <a
+              data-fancybox
+              data-type="iframe"
+              href="https://sinalpublico.cc/player3/serverf2hlb.php?vid=DEADP"
+            >
+              <div class="box-img">
+                <img
+                  src="assets/img/posts/post-deadpool.jpg"
+                  alt=">O Deadpool"
+                />
+              </div>
+              <div class="infos">
+                <p>Deadpool</p>
+                <p>1h 47m</p>
+              </div>
+            </a>
+          </div>
+          <div class="botao">
+            <a href="#" class="btn">Ver mais</a>
+          </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="d-flex">
+          <div class="infos">
+            <img class="logo"
+            src="assets/img/logo-marvel.svg"
+            alt="Logo Marvel"
+          />
+          <p>Site desenvolvido para fins de teste.</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Personagens</a></li>
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Séries</a></li>
+              <li><a href="#">Sobre</a></li>
+            </ul>
+            <ul class="icons">
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="observacao">
+          Copyright &copy 2024 ICS - Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
 
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
