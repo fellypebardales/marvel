@@ -89,6 +89,11 @@ header nav .btn:hover {
     border-color: var(--branco);
 }
 
+header .icon-menu-hamburguer,
+.menu-hamburguer {
+    display: none;
+}
+
 .banner.box-fancy {
     max-width: 400px;
     width: 100%;
@@ -183,6 +188,7 @@ header nav .btn:hover {
 #topo {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 #topo .swiper-pagination {
@@ -265,6 +271,13 @@ header nav .btn:hover {
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+#topo h1 span {
+    color: var(--vermelho);
+    display: block;
+    font-size: 80px;
+    margin-top: -20px;
 }
 
 #topo .banner .infos {
@@ -452,7 +465,7 @@ header nav .btn:hover {
     position: relative;
 }
 
-#filmes .d-grid {
+.d-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
@@ -461,23 +474,24 @@ header nav .btn:hover {
     margin-top: 50px;
 }
 
-#filmes .d-grid a .box-img {
+.d-grid a .box-img {
     overflow: hidden;
     height: 410px;
 }
 
-#filmes .d-grid a img {
+.d-grid a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all .5s;
 }
 
-#filmes .d-grid a:hover img {
+.d-grid a:hover img {
     transform: scale(1.1);
 }
 
-#filmes .d-grid a p:nth-child(1) {
+.d-grid a p:nth-child(1) {
+    margin-top: 10px;
     display: -webkit-box;
 -webkit-line-clamp: 1; /** número de linhas que você quer exibir */
 -webkit-box-orient: vertical;
@@ -485,7 +499,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 }
 
-#filmes .d-grid a p:nth-child(2) {
+.d-grid a p:nth-child(2) {
 font-size: 14px;
 }
 
@@ -500,7 +514,9 @@ footer {
     border-top: 10px solid var(--vermelho);
     padding: 60px 0;
     border-top: 10px solid transparent;
-  border-image: linear-gradient(to right, var(--vermelho), var(--preto)) 1;
+    border-image: linear-gradient(to right, var(--vermelho), var(--preto)) 1;
+    overflow: hidden;
+    margin-top: -2px;
 }
 
 footer .logo {
@@ -541,4 +557,393 @@ footer nav ul li a {
 
 footer nav ul li:hover a {
     color: var(--vermelho);
+}
+
+.personagem-rodape {
+    padding-top: 50px;
+}
+
+
+.topo-sobre {
+    margin-top: 200px;
+    height: auto !important;
+    padding-bottom: 100px;
+}
+
+.topo-sobre h1 {
+    color: var(--branco);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.topo-sobre h1 span {
+    color: var(--vermelho);
+    display: block;
+    font-size: 80px;
+    margin-top: -20px;
+}
+
+.topo-sobre img.img-lateral {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    max-width: 40%;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+.topo-contato {
+    margin-top: 200px;
+    height: auto !important;
+    padding-bottom: 300px;
+}
+
+.topo-contato h1 {
+    color: var(--branco);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.topo-contato h1 span {
+    color: var(--vermelho);
+    display: block;
+    font-size: 80px;
+    margin-top: -20px;
+}
+
+.topo-contato img.img-lateral {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    max-width: 50%;
+    animation: float 4s ease-in-out infinite;
+    transform: translateY(0);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+.topo-contato form {
+    margin-top: 40px;
+}
+
+.topo-contato form .input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.topo-contato form input {
+    border: 1px solid var(--branco);
+    background: none;
+    padding: 13px;
+    width: 50%;
+}
+
+.topo-contato form .user-label {
+    position: absolute;
+    left: 15px;
+    color: var(--branco);
+    pointer-events: none;
+    transform: translateY(13px);
+    transition: 350ms;
+}
+
+.topo-contato form input:focus~label, .topo-contato form input:valid~label,
+.topo-contato form .textarea:focus~label, .topo-contato form textarea:valid~label {
+    top: -15px;
+    transform: translateY(0%) scale(1);
+    color: var(--vermelho);
+    font-weight: 600;
+    left: 0;
+    font-size: 12px;
+}
+
+
+.topo-contato form .textarea {
+    border: 1px solid var(--branco);
+    background: none;
+    color: var(--branco);
+    padding: 15px;
+    width: 50%;
+}
+
+.topo-contato form input:focus,
+.topo-contato form input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), #bf1313, #bf1313, #bf1313, #bf1313, #000, #000, #000) 1;
+    animation: 7s rotate9234 linear infinite;
+    color: var(--branco);
+  }
+
+  .topo-contato form .textarea:focus,
+  .topo-contato form textarea:valid {
+    outline: none;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), #bf1313, #bf1313, #bf1313, #bf1313, #000, #000, #000) 1;
+    animation: 7s rotate9234 linear infinite;
+  }
+
+  .topo-contato form .btn {
+    color: var(--branco);
+    cursor: pointer;
+  }
+
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+
+/* PAGE - FILMES */
+.topo-filmes {
+    padding-top: 200px;
+    height: auto !important;
+    padding-bottom: 200px;
+}
+
+.topo-filmes h1 {
+    color: var(--branco);
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.topo-filmes h1 span {
+    color: var(--vermelho);
+    display: block;
+    font-size: 80px;
+    margin-top: -20px;
+}
+
+.topo-filmes img.img-lateral {
+    position: fixed;
+    right: -0%;
+    top: 250px;
+    max-width: 30%;
+    z-index: -1;
+}
+
+.topo-filmes .d-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.topo-filmes .d-grid .box-img {
+    height: 390px;
+}
+
+.topo-series {
+    padding-top: 200px;
+    height: auto !important;
+    padding-bottom: 200px;
+}
+
+.topo-series img.img-lateral {
+    position: absolute;
+    right: -0%;
+    top: 150px;
+    max-width: 30%;
+    z-index: -1;
+}
+
+.topo-series
+
+
+@media screen and (max-width: 991px) {
+    .d-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2, h1 {
+        font-size: 40px !important;
+    }
+
+    h2 span, h1 span {
+        font-size: 40px !important;
+        margin-top: 0 !important;
+    }
+
+    header .container {
+        top: 0;
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 110px;
+        margin-left: 20px;
+    }
+    header .navegacao-desktop {
+        display: none;
+    }
+
+    header .menu-hamburguer {
+        display: block;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    #topo.home {
+        min-height: 600px;
+    }
+
+    #topo .swiper-pagination {
+        position: absolute;
+        right: auto;
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 2px;
+        width: auto !important;
+    }
+
+    #topo .swiper-pagination span.swiper-pagination-bullet-active {
+        height: 18px;
+        width: 30px;
+    }
+
+    #personagens .buttons {
+        margin-top: 30px;
+        position: static;
+        right: 0;
+        bottom: 0;
+    }
+
+    .box-fancy img {
+        display: none;
+    }
+
+    .box-fancy {
+        height: 90vh;
+        width: 100%;
+        padding: 40px 15px 40px 30px;
+        background-color: var(--preto);
+        overflow: hidden;
+        border-radius: 50px;
+    }
+
+    #filmes h2 {
+        max-width: 300px;
+        margin-left: auto;
+    }
+
+    .d-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .d-grid a .box-img {
+        height: 350px !important;
+    }
+
+    footer .d-flex {
+        display: block !important;
+    }
+
+    footer nav {
+        margin-left: 0;
+        margin-top: 30px
+    }
+
+    footer nav ul {
+        gap: 15px;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    footer nav ul.icons {
+        margin-bottom: 20px;
+    }
+
+    .topo-filmes,
+    .topo-series {
+        height: auto !important;
+        padding-bottom: 100px;
+        padding-top: 130px;
+    }
+
+    .topo-filmes img.img-lateral {
+        top: 0;
+        max-width: 50%;
+    }
+
+    .topo-sobre {
+        margin-top: 110px;
+        height: auto !important;
+        padding-bottom: 100px;
+    }
+
+    .topo-sobre img.img-lateral {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .topo-contato img.img-lateral {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        margin-top: 30px;
+    }
+
+    .topo-contato {
+        margin-top: 130px;
+        height: auto !important;
+        padding-bottom: 100px;
+    }
+
+    .topo-contato form input,
+    .topo-contato form .textarea {
+        width: -webkit-fill-available;
+    }
+
+}
+
+@media screen and (max-height: 680px) {
+    #topo.home {
+        min-height: 600px;
+    }
+
+    #topo.home .banner .informacao {
+        height: 100%;
+        padding-top: 150px;
+    }
+
+    #topo.home .banner {
+        height: 100%;
+    }
+
+    .topo-contato form input {
+        width: 100%;
+    }
 }

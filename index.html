@@ -30,19 +30,34 @@
           src="assets/img/logo-marvel.svg"
           alt="Logo da Marvel"
         />
-        <nav>
+        <nav class="navegacao-desktop">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Personagens</a></li>
-            <li><a href="#">Filmes</a></li>
-            <li><a href="#">Séries</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="sobre-a-marvel.html">Sobre</a></li>
           </ul>
-          <a class="btn" href="#">Contato</a>
+          <a class="btn" href="contato.html">Contato</a>
         </nav>
+        <a class="menu-hamburguer" data-src="#menu-hamburguer" data-fancybox>
+          <i class="bi bi-list"></i>
+        </a>
+        <div class="box-fancy" id="menu-hamburguer">
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Início</a></li>
+              <li><a href="#personagens">Personagens</a></li>
+              <li><a href="filmes.html">Filmes</a></li>
+              <li><a href="series.html">Séries</a></li>
+              <li><a href="sobre-a-marvel.html">Sobre</a></li>
+            </ul>
+            <a class="btn" href="contato.html">Contato</a>
+          </nav>
+        </div>
       </div>
     </header>
-    <section id="topo">
+    <section id="topo" class="home">
       <div class="swiper-wrapper">
         <div class="banner banner1 swiper-slide">
           <div class="container">
@@ -391,9 +406,6 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="trailers">
-        <div class="slick-trailers"></div>
-      </div>
     </section>
     <main>
       <section id="personagens">
@@ -1578,13 +1590,18 @@
             </a>
           </div>
           <div class="botao">
-            <a href="#" class="btn">Ver mais</a>
+            <a href="filmes.html" class="btn">Ver mais</a>
           </div>
           </div>
         </div>
       </section>
     </main>
 
+    <div class="personagem-rodape">
+      <div class="container">
+        <img src="assets/img/deadpool-deitado.webp" alt="Deadpool deitado">
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="d-flex">
@@ -1597,11 +1614,11 @@
           </div>
           <nav>
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Personagens</a></li>
-              <li><a href="#">Filmes</a></li>
-              <li><a href="#">Séries</a></li>
-              <li><a href="#">Sobre</a></li>
+              <li><a href="index.html" class="active">Início</a></li>
+              <li><a href="#personagens">Personagens</a></li>
+              <li><a href="filmes.html">Filmes</a></li>
+              <li><a href="series.html">Séries</a></li>
+              <li><a href="sobre-a-marvel.html">Sobre</a></li>
             </ul>
             <ul class="icons">
               <li><a href="#"><i class="bi bi-instagram"></i></a></li>
