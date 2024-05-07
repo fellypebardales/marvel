@@ -924,6 +924,15 @@ footer nav ul li:hover a {
         width: -webkit-fill-available;
     }
 
+    .box-fancy nav ul li {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .box-fancy nav ul {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media screen and (max-height: 680px) {
